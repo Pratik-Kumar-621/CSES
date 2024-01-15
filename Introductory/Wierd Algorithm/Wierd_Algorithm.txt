@@ -1,0 +1,13 @@
+for checking even or odd we can use 
+(n&1) => it returns 1 when n is odd and 0 when n is even
+when n is even we do the operation n>>2 which divides n by 2^1
+when n is odd we do the operation n*3+1
+we run the loop till n==1
+
+while(n!=1){
+    print n
+    if(odd) n*3+1
+    else n>>1
+}
+
+finally print 1
