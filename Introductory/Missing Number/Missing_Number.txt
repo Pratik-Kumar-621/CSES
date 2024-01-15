@@ -1,0 +1,19 @@
+Few solution like 
+ - sorting takes TC of O(nlog(n))
+ - hasing takes SC of O(n)
+
+Most optimal solution is obtained by using bitwise XOR operator (^)
+
+a^a = 1
+
+lets consider elements 1,2,3,3,4,2
+
+by xoring all elements : 1^2^3^3^4^2 we remains with 1^4,
+so if we get initial input as xor of 1-n i.e. 1^2^3^...n 
+and then xor the inputs. we remains with the missing_element^1 which is equal to missing_element
+
+Psudo Code:
+initial-0;
+for(i=1-n) initial^i;
+for(i=elements_in_array) initial^elements_in_array[i]
+return initial
