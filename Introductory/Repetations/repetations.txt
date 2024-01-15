@@ -1,0 +1,3 @@
+starting from index 1 we check if element at that index matches with previous index element or not. 
+we return the maximum count for that.
+
